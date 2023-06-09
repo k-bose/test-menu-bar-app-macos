@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct test_menu_bar_app_macosApp: App {
+struct test_menu_bar_app_macosApp: App {    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
     }
 }
