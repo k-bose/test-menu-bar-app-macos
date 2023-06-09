@@ -24,19 +24,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        statusBarItem.button?.image = NSImage(named: "AppIcon.appiconset") // replace "YourIconName" with your actual icon name
+        statusBarItem.button?.image = NSImage(named: "AppIcon")
 
         menu = NSMenu(title: "My Menu Bar App")
+        
         let menuItem1 = NSMenuItem(title: "Item 1", action: #selector(AppDelegate.doItem1), keyEquivalent: "")
         menuItem1.target = self
         menu.addItem(menuItem1)
         
-        menu = NSMenu(title: "My Menu Bar App")
         let menuItem2 = NSMenuItem(title: "Item 2", action: #selector(AppDelegate.doItem2), keyEquivalent: "")
         menuItem2.target = self
         menu.addItem(menuItem2)
-        
-        menu = NSMenu(title: "My Menu Bar App")
+
         let menuItem3 = NSMenuItem(title: "Item 3", action: #selector(AppDelegate.doItem3), keyEquivalent: "")
         menuItem3.target = self
         menu.addItem(menuItem3)
